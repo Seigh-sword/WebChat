@@ -2,15 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WebChat -Chat with anyone</title>
+  <title>WWebchat -talk with anyone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <h2>Chat</h2>
+    <button id="themeToggle">🌙 / ☀️</button>
+  </div>
+
+  <!-- Video Area -->
+  <div class="video-area">
+    <video id="localVideo" autoplay muted playsinline></video>
+    <video id="remoteVideo" autoplay playsinline></video>
+  </div>
+
+  <!-- Call Controls -->
+  <div class="call-controls">
+    <button id="videoCallBtn">Video Call</button>
+    <button id="voiceCallBtn">Voice Call</button>
+    <button id="endCallBtn">End</button>
+  </div>
+
+  <!-- Chat Area -->
   <div class="chat-container">
-    <h2>Web chat</h2>
-
     <div id="messages" class="messages"></div>
 
     <div class="input-area">
